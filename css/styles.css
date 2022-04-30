@@ -103,6 +103,11 @@ ul {
   margin-right: auto;
 }
 
+.btn:hover,
+.btn:focus {
+  background-color: #188ce8;
+}
+
 textarea {
   resize: none;
 }
@@ -228,11 +233,6 @@ textarea {
 
   margin: 0 auto 30px;
   width: 696px;
-}
-
-.btn:hover,
-.btn:focus {
-  background-color: #188ce8;
 }
 
 /* Особенности */
@@ -717,6 +717,11 @@ textarea {
   background-color: var(--main-backgroud-color);
 }
 
+.modal-close-img:hover,
+.modal-close-img:focus {
+  fill: var(--accent-text-color);
+}
+
 .modal-title {
   font-weight: 700;
   font-size: 20px;
@@ -802,6 +807,13 @@ textarea {
 
 .modal-agreements-link {
   color: var(--accent-text-color);
+  transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-agreements-link:hover {
+  text-decoration: blink;
+  color: #188ce8;
 }
 
 .modal-agreements-icon {
